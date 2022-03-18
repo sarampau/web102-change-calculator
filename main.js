@@ -1,5 +1,9 @@
 let amountDue = document.getElementById('amount-due');
 let amountGiven = document.getElementById('amount-received');
+let twentyDollars = document.getElementById('twenty-dollars-output');
+let tenDollars = document.getElementById('ten-dollars-output');
+let fiveDollars = document.getElementById('five-dollars-output');
+let twoDollars = document.getElementById('two-dollars-output');
 let dollars = document.getElementById('dollars-output');
 let quarters = document.getElementById('quarters-output');
 let dimes = document.getElementById('dimes-output');
@@ -9,6 +13,22 @@ let pennies = document.getElementById('pennies-output');
 const handleChangeButton = e => {
     let diff = amountGiven.value - amountDue.value;
     let change = amountGiven.value - amountDue.value;
+    if (diff > 0) {
+        twentyDollars.innerHTML = Math.floor(change / 20);
+        change = (change % 20).toFixed(2);
+    }
+    if (diff > 0) {
+        tenDollars.innerHTML = Math.floor(change / 10);
+        change = (change % 10).toFixed(2);
+    }
+    if (diff > 0) {
+        fiveDollars.innerHTML = Math.floor(change / 5);
+        change = (change % 5).toFixed(2);
+    }
+    if (diff > 0) {
+        twoDollars.innerHTML = Math.floor(change / 2);
+        change = (change % 2).toFixed(2);
+    }
     if (diff > 0) {
         dollars.innerHTML = Math.floor(change / 1);
         change = (change % 1).toFixed(2);
