@@ -1,0 +1,109 @@
+body {
+    background-color: rgb(206, 205, 205);
+}
+
+h1 {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 50px;
+    color: rgb(206, 205, 205);
+    -webkit-text-stroke: 1px black;
+    height: 90px;
+    margin: 0;
+    padding-top: 20px;
+    background-image: url(https://i0.wp.com/clark.com/wp-content/uploads/2020/07/quiktrip-coins2.jpg?fit=1200%2C624&ssl=1);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+#input-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+}
+
+#input-container input {
+    width: 180px;
+    height: 20px;
+}
+
+#output {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 20px;
+}
+
+#button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#calculate-change {
+    font-family: sans-serif;
+    font-size: 15px;
+    width: 300px;
+    height: 40px;
+
+}
+
+#output-container-1 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+}
+
+#output-container-1 h3 {
+    
+}
+
+#output-container-1 p {
+    font-size: 20px;
+    
+}
+
+#output-container-2 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+}
+
+#output-container-2 h3 {
+    
+}
+
+#output-container-2 p {
+    font-size: 20px;
+    
+}
+
+#output-container-3 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+}
+
+#output-container-3 h3 {
+    
+}
+
+#output-container-3 p {
+    font-size: 20px;
+    
+}
+
+.container-card {
+    display: flex;
+    border: 1px solid;
+    width: 125px;
+    height: 120px;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 5px;
+}
+

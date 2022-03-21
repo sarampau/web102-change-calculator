@@ -9,6 +9,7 @@ let quarters = document.getElementById('quarters-output');
 let dimes = document.getElementById('dimes-output');
 let nickels = document.getElementById('nickels-output');
 let pennies = document.getElementById('pennies-output');
+let output  = document.getElementById('output');
 
 const handleChangeButton = e => {
     let diff = amountGiven.value - amountDue.value;
@@ -49,6 +50,7 @@ const handleChangeButton = e => {
         pennies.innerHTML = Math.floor(change / 0.01);
         change = (change % 0.01).toFixed(2);
     }
+    output.innerHTML = 'Your change due is ' + diff;
 }
 
 document.getElementById('calculate-change').addEventListener('click', () => handleChangeButton());

@@ -7,53 +7,62 @@
   </head>
   <body>
     <h1>Change Calculator</h1>
-    <div>
-      <p>How much is due for this sale?</p>
-      <input id='amount-due' type='number' placeholder='Amount Due'>
+    <div id='input-container'>
+      <div>
+        <p>How much is due for this sale?</p>
+        <input id='amount-due' type='number' placeholder='Amount Due'>
+      </div>
+      <div>
+        <p>How much has been given?</p>
+        <input id='amount-received' type='number' placeholder='Amount Given'>
+      </div>
     </div>
-    <div>
-      <p>How much has been given?</p>
-      <input id='amount-received' type='number' placeholder='Amount Given'>
+    <p id='output'></p>
+    <div id='button-container'>
+      <button id='calculate-change'>Calculate Change</button>
     </div>
-    <div>
-      <div id='twenty-dollars-container'>
+    <div id='output-container-1'>
+      <div class='container-card'>
         <h3>Dollars ($20)</h3>
         <p id='twenty-dollars-output'></p>
       </div>
-      <div id='ten-dollars-container'>
+      <div class='container-card'>
         <h3>Dollars ($10)</h3>
         <p id='ten-dollars-output'></p>
       </div>
-      <div id='five-dollars-container'>
+      <div class='container-card'>
         <h3>Dollars ($5)</h3>
         <p id='five-dollars-output'></p>
       </div>
-      <div id='two-dollars-container'>
+    </div>
+    <div id='output-container-2'>
+      <div class='container-card'>
         <h3>Dollars ($2)</h3>
         <p id='two-dollars-output'></p>
       </div>
-      <div id='dollars-container'>
+      <div class='container-card'>
         <h3>Dollars ($1)</h3>
         <p id='dollars-output'></p>
       </div>
-      <div id='quarters-container'>
+      <div class='container-card'>
         <h3>Quarters</h3>
         <p id='quarters-output'></p>
       </div>
-      <div id='dimes-container'>
+    </div>
+    <div id='output-container-3'>
+      <div class='container-card'>
         <h3>Dimes</h3>
         <p id='dimes-output'></p>
       </div>
-      <div id='nickels-container'>
+      <div class='container-card'>
         <h3>Nickels</h3>
         <p id='nickels-output'></p>
       </div>
-      <div id='pennies-container'>
+      <div class='container-card'>
         <h3>Pennies</h3>
         <p id='pennies-output'></p>
       </div>
     </div>
-    <button id='calculate-change'>Calculate Change</button>
-    <script src='main.js' charset='utf-8'></script>
+    <script src='main.js'></script>
   </body>
 </html>
